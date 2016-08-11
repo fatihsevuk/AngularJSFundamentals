@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-init="firstName='ali' ">
+
+    <p>isminizi giriniz</p><br/>
+    <input type="text" ng-model="name" placeholder="ismini gir.." /><br/>
+
+    <h1>Merhaba {{ name}}</h1>
+
+    <p ng-bind="name"></p>
+
+    <p><span ng-bind="firstName"></span></p>
+
+</div>
+</body>
+</html>

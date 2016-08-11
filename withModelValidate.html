@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+
+    <form ng-app="" name="myForm">
+
+        Email:<input type="email" name="myAdress" ng-model="text" />
+        <span ng-show="myForm.myAdress.$error.email">geçersiz email adres</span>
+
+    </form>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

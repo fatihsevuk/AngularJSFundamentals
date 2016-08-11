@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form ng-app="" name="myForm" ng-init="myText= 'asdf@asdf.com' ">
+
+Email:
+
+    <input typr="email" name="myAdress" ng-model="myText" required>
+
+    <p>yaptığın girişe göre uygulmanın statüleri aşağıda</p>
+
+    <h1>statüler</h1>
+
+    <p>Valid : {{myForm.myAdress.$valid+" "}}
+    eğer validasyon doğru ise bu sart true döner...
+    </p>
+    <br>
+    <p>Dirty : {{myForm.myAdress.$dirty+" "}}
+        eğer validasyon doğru ama tanımlana mail iile eşleşmiyorsa bu şart true döner
+    </p>
+    <br>
+    <p>Touched : {{myForm.myAdress.$touched+" "}}
+        eğer input alanında değişme yada dokunma varsa bu şart true döner
+    </p>
+
+
+</form>
+
+
+
+
+</body>
+</html>

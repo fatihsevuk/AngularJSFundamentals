@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div ng-app="" , ng-init="kisiler=[
+    {isim:'ali' , ulke:'turkiye'} ,
+    {isim:'john' , ulke:'abd'} ,
+    {isim:'saly' , ulke:'england'} ,
+    {isim:'hans' , ulke:'germany'} ,
+
+
+    ]">
+
+
+        <ul>
+            <li ng-repeat="kisi in kisiler">
+
+                {{kisi.isim + ' , ' + kisi.ulke}}
+
+
+            </li>
+        </ul>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

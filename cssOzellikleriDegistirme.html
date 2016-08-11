@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div ng-app="" ng-init="renk='lightblue' ; sayi1=20 ; sayi2=30 ; ad='ali' ; soyad='veli' ; person={boy:170,kilo:85} ; sayilar=[1,2,5,7,9]; ">
+
+    <input style="background-color: {{renk}} " ng-model="renk" value="{{renk}}" >
+
+    <p style="background-color: {{renk}}" ng-bind="renk">{{renk}}</p>
+
+    <p> iki sayının çarpımı : {{sayi1 * sayi2}}</p><br/>
+
+    <p>iki sayını çarpımı ng bind ile :<span ng-bind="sayi1*sayi2"></span></p>
+
+    <hr/>
+
+    <p>ad soyad: {{ad+" "+soyad}}</p>
+
+    <p>ng bind ile ad soyad:<span ng-bind="ad+' '+soyad" ></span></p>
+
+    <hr/>
+
+    <p>boy: {{person.boy}} kilo:{{person.kilo}}</p>
+
+    <p>ng bind ile <span ng-bind="'boy: ' +person.boy+ 'kilo: ' +person.kilo"></span></p>
+
+    <hr>
+
+    <ul>
+        <li ng-repeat="sayi in sayilar">{{sayi}}</li>
+    </ul>
+
+    <hr>
+
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
